@@ -234,11 +234,11 @@ dealButton.addEventListener('click', () => {
 });
 
 //count the number of times the deal button is clicked, once it reaches 52, the deal button disappears
-let count = 0;
-dealButton.addEventListener('click', () => {
-    count++;
-    if (count === 10) {
-        dealButton.style.display = 'none';
-        winLossMsg.textContent = 'Game Over!' + ;
-    }
-});
+// let count = 0;
+// dealButton.addEventListener('click', () => {
+//     count++;
+//     if (count === 10) {
+//         dealButton.style.display = 'none';
+//         winLossMsg.textContent = 'Game Over!' + ;
+//     }
+// });
