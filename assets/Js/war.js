@@ -6,13 +6,13 @@ const submitBtn = document.getElementById("submit-btn");
 const displayArea = document.getElementById("display-area");
 const formEl = document.getElementById("form");
 const winner = document.getElementById("winner-display");
-const inputValue = modalInput.value;
+let inputValue = modalInput.value;
 
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   event.stopPropagation();
-  // const inputValue = modalInput.value;
-  // console.log("inputValue", inputValue);
+  const inputValue = modalInput.value;
+  console.log("inputValue", inputValue);
   displayArea.textContent = inputValue + "'s";
   localStorage.setItem("username", JSON.stringify(inputValue));
 });
