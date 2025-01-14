@@ -51,7 +51,7 @@ li {
   color: white;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .main-nav-link:hover,
@@ -81,16 +81,16 @@ h1 {
 .game {
 }
 
-#userCard{
+#userCard {
   width: 257px;
 }
 
-#cpuCard{
+#cpuCard {
   width: 257px;
 }
 
 #userCount {
-  display:none;
+  display: none;
 }
 
 #cpuCount {
@@ -101,9 +101,11 @@ h1 {
   padding: 20px;
 }
 
-/* .col {
-  margin: 20px;
-} */
+.card-back {
+  border-radius: 25px;
+  cursor: pointer;
+  caret-color: transparent;
+}
 
 #game-btns {
   display: flex;
@@ -113,12 +115,19 @@ h1 {
   height: 100%;
 }
 
+#new-game:hover,
+#dealButton:hover {
+  background-color: #fff;
+  color: rgb(243, 99, 99);
+  border-color: #fff;
+}
+
 .btn {
   display: block;
   font-size: 2rem;
   padding: 1rem 2.5rem;
   border-radius: 15px;
-
+  transition: all 1s;
   cursor: pointer;
   margin-bottom: 10px;
   background-color: rgb(243, 99, 99);
