@@ -21,9 +21,10 @@ container.addEventListener('click', function (event) {
   }
 });
 
+
 const game = () => {
-    let playerScore = 0;
-    let computerScore = 0;
+    let playerScore = parseInt(localStorage.getItem('playerScore')) || 0;
+    let computerScore = parseInt(localStorage.getItem('computerScore')) || 0;
     let moves = 0;
 
 
@@ -33,6 +34,9 @@ const game = () => {
         const scissorBtn = document.querySelector('.scissor');
         const playerOptions = [rockBtn, paperBtn, scissorBtn];
         const computerOptions = ['rock', 'paper', 'scissors']
+
+        document.querySelector('.p-count').textContent = playerScore;
+        document.querySelector('.c-count').textContent = computerScore;
 
         playerOptions.forEach(option => {
             option.addEventListener('click', function () {
@@ -84,6 +88,9 @@ const game = () => {
         }
     }
 
+    localStorage.setItem('playerScore', playerScore);
+    localStorage.setItem('computerScore', computerScore);
+    
     const gameOver = (playerOptions, movesLeft) => {
 
         const chooseMove = document.querySelector('.move');
