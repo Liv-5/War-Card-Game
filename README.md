@@ -4,6 +4,10 @@ Project 1: MVP Group FSF-FT-EAST-DEVEMBER-121624-MTTH-CONS
 
 # Create a website for a war card game
 
+## Description
+
+We wanted to create a responsive site to play the card game War. We wanted to apply and practice the skills we have learned so far in the bootcamp. We initially thought it would be fairly simple and wanted to have multiple games on the page but when it came down to the game logic we realized we had our hands full with the initial card game idea. We collaborated and all contributed to different aspects of the project.
+
 ## User Story
 
 ```md
@@ -53,7 +57,8 @@ THEN new cards are dealt.
 
 ## Link to Site
 
-https://amononito.github.io/FSF121624-GROUPMVP/
+Deployed link: https://liv-5.github.io/War-Card-Game/
+Github Repo: https://github.com/Liv-5/War-Card-Game
 
 ## Credits
 
