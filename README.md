@@ -46,6 +46,11 @@ THEN new cards are dealt.
 
 ## Mock-Up
 
+<img src="./Media/war_home.PNG">
+<img src="./Media/war_game.PNG">
+<img src="./Media/war_aboutus.PNG">
+<img src="./Media/war_RPS.PNG">
+
 ## Credits
 
 Pedro Enderica, Olivia Smith, Koosha Moradpour, Lee politi
