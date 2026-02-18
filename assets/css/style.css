@@ -24,6 +24,7 @@ header {
 
 nav {
   width: 100%;
+  border-bottom: 2px solid #000;
 }
 
 ul {
@@ -36,12 +37,9 @@ ul {
   caret-color: transparent;
 }
 
-li {
-  font-size: 50px;
-}
-
 .main-nav-link {
   text-decoration: none;
+  font-size: 50px;
   color: white;
 }
 
@@ -51,8 +49,8 @@ li {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
+  font-size: 2.5rem;
+  transition: all 1s;
 }
 
 .main-nav-link:hover,
@@ -72,13 +70,18 @@ h1 {
   text-align: center;
   font-size: 100px;
   margin: 50px auto;
-  font-family: "Stencil Std", fantasy;
-  text-shadow: 5px 5px rgb(247, 5, 5);
+
+  text-shadow: 5px 5px rgb(243, 99, 99);
 }
 
 h3 {
-  font-family: Stencil Std, fantasy;
+  font-size: 30px;
 }
+
+p {
+  font-size: 22px;
+}
+
 .knight-one {
   height: 280px;
   width: 325px;
@@ -91,29 +94,4 @@ h3 {
   width: 325px;
   margin: 20px;
   border-radius: 10px;
-}
-#game-btns {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.btn {
-  display: block;
-  font-size: 2rem;
-  padding: 1rem 2.5rem;
-  border-radius: 15px;
-
-  cursor: pointer;
-  margin-bottom: 10px;
-  background-color: rgb(243, 99, 99);
-  border-color: rgb(243, 99, 99);
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: rgb(182, 76, 76);
-  border-color: rgb(182, 76, 76);
 }
