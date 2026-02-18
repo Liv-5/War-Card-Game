@@ -52,7 +52,7 @@ li {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   transition: all 1s;
 }
 
@@ -142,9 +142,7 @@ h1 {
 } */
 
 .btn-primary:hover,
-.btn-primary:active,
-/* .btn-primary:focus,
-.btn-primary:visited*/ {
+.btn-primary:active {
   background-color: rgb(182, 76, 76);
   border-color: rgb(182, 76, 76);
 }

@@ -1,21 +1,23 @@
 * {
-  padding: 10px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bebas Neue", serif;
-  background-color: rgb(107, 104, 104);
   caret-color: transparent;
 }
 
-:root {
-  --heliotrope: #6d0f41;
-  --box1-color: hsl(19, 68%, 44%);
-  --light-accent: #e1a071;
-  --dark-accent: #570e0e;
-  --blue-light: #5151e847;
-  --blue-dark: rgb(194 194 197 / 71%);
-  --blue-light1: rgb(182, 182, 255);
+html,
+body {
+  font-family: "Bebas Neue", serif;
+  background-color: rgb(107, 104, 104);
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
 .github-button {
   width: 100px;
   height: 100px;
@@ -32,18 +34,16 @@
   z-index: 1;
   border-radius: 50%;
 }
-header {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+nav {
+  width: 100%;
+  border-bottom: 2px solid #000;
 }
-nav li {
-  font-size: 50px;
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
-}
+
 ul {
   list-style: none;
   display: flex;
@@ -53,23 +53,42 @@ ul {
   margin: 0;
   caret-color: transparent;
 }
-nav a:hover {
-  color: rgb(243, 99, 99);
+
+li {
+  font-size: 50px;
 }
+
 .main-nav-link {
   text-decoration: none;
   color: white;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
+  font-size: 2.5rem;
+  transition: all 1s;
 }
 
-h1 {
-  text-align: center;
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(243, 99, 99);
 }
+
+/**************************/
+/*  BODY  */
+/**************************/
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+  margin: 50px auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -84,39 +103,38 @@ main {
 .row {
   display: grid;
   grid-template-columns: 1fr 2fr;
-
+  margin-bottom: 3rem;
   justify-items: stretch;
 }
 .name-box {
-  width: 200px;
-  height: 200px;
-  border-radius: 60px;
+  color: white;
+  width: 220px;
+  height: 220px;
+  border-radius: 45px;
+  border: 8px solid rgb(243, 99, 99);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  background: linear-gradient(
-    var(--box1-color),
-    var(--light-accent),
-    var(--dark-accent)
-  );
+  font-size: 31px;
+  background-color: #353535;
+  letter-spacing: 0.1rem;
 }
 .infoBox {
   position: relative;
-  padding: 20px;
+  padding: 15px;
+  color: white;
   text-align: center;
-  border: 14px solid #390707;
-  border-radius: 36px;
+  border: 8px solid rgb(243, 99, 99);
+  border-radius: 45px;
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 28px;
   overflow: hidden;
   cursor: pointer;
-  background: linear-gradient(var(--blue-light), var(--blue-dark));
+  background-color: #353535;
+  letter-spacing: 0.1rem;
 }
 
 .info-content {
@@ -126,13 +144,10 @@ main {
 }
 
 .name-box {
-  background-color: #d1e7ff;
+  background-color: #353535;
 }
 
-.info-box {
-  background-color: #ffeedb;
-}
-
+/* 
 aside {
   display: flex;
   flex-direction: row;
@@ -148,7 +163,9 @@ aside img {
 .rps-title {
   font-size: 3rem;
   color: #ff6347;
-  animation: bounceIn 1.5s ease infinite, glow 2s ease-in-out infinite alternate;
+  animation:
+    bounceIn 1.5s ease infinite,
+    glow 2s ease-in-out infinite alternate;
   font-family: "Comic Sans MS", cursive, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -170,4 +187,4 @@ aside .game {
 .paper:hover,
 .scissor:hover {
   background-color: rgb(182, 76, 76);
-}
+} */
